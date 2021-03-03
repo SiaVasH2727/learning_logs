@@ -31,9 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    
     # My Apps
     'learning_logs',
     'users',
+
+    # Third Party Apps
+    'bootstrap4',
 
     # Default Apps
     'django.contrib.admin',
@@ -124,3 +128,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# My Settings
+LOGIN_URL = 'users:login'
+
