@@ -1,17 +1,17 @@
 {% extends "base.html" %}
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Learning_logs</title>
-</head>
+    {% block page_header %}
 
-<body>
-    {% block content %}
-        <p> First Page </p>
-    {% endblock content %}
-</body>
+        <div class="jumbotron">
+            <h1 class="display-3">Track your learning.</h1>
 
-</html>
+        <p class="lead">
+            Make your own Learning Log ...
+        </p>
+
+        <a class="btn btn-lg btn-primary" href="{% url 'users:register' %}" role="button">Register &raquo;</a>
+
+        </div>
+
+    {% endblock page_header %}
